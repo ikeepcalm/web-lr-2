@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+div {
+    font-family: Arial, sans-serif;
+    line-height: 23px;
+}
+
+.header {
+    background-color: lightblue;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex: 0 1 10%;
+    padding: 0 20px;
+}
+
+.footer {
+    background-color: lightblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    flex: 0 1 10%;
+}
+
+.container {
+    display: flex;
+    flex: 1 1 auto;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar-left {
+    background-color: lightcoral;
+    flex: 0 1 15%;
+    min-width: 150px;
+    padding: 10px;
+}
+
+.links {
+    padding-left: 10px;
+}
+
+.sidebar-right {
+    background-color: lightcoral;
+    flex: 0 1 15%;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.main {
+    background-color: white;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.menu {
+    grid-area: y;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.top-middle {
+    background-color: lightgreen;
+    flex: 0 1 auto;
+    padding: 10px;
+}
+
+.main-content {
+    background-color: white;
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.bottom-right {
+    background-color: lightgreen;
+    flex: 0 1 auto;
+    padding: 10px;
+}
+
+.x, .y {
+    background-color: white;
+    max-width: max-content;
+    padding: 5px;
+    flex: 1;
+}
+
+.angels {
+    grid-area: y;
+    align-self: center;
+    background-color: antiquewhite;
+    padding: 2px;
+    width: max(80%, 100px);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    flex: 0 1 10%;
+}
